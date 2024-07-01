@@ -1,0 +1,350 @@
+@use "./mixin" as *;
+@include head;
+@include footer;
+@include form;
+@include modal;
+@include feedback;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Vela Sans";
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.conteiner {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main {
+    margin-top: 110px;
+    &_way {
+        &_link {
+            font-size: 24px;
+            text-decoration: none;
+            color: #3B444B;
+            font-weight: 500;
+        }
+        &_point {
+            margin: 0px 17px;
+        }
+    }
+    &_head {
+        margin: 30px auto;
+        font-weight: 600;
+        font-size: 113px;
+        text-align: center;
+        color: #3b444b;
+    }
+
+    &_info {
+        margin-bottom: 50px;
+        display: flex;
+        align-items: flex-start;
+        &_image {
+            width: 100%;
+        }
+        &_text {
+            margin-left: 50px;
+            font-weight: 400;
+            font-size: 48px;
+            color: #3b444b;
+            &_logo {
+                font-family: "Inder";
+            }
+        }
+    }
+}
+
+.dark {
+    margin: 30px 0px;
+    &_text {
+        width: 1500px;
+        font-weight: 300;
+        font-size: 48px;
+        color: #e8e8e8;
+        &_logo {
+            font-family: "Inder";
+        }
+    }
+    &_image {
+        margin-top: 30px;
+        margin-left: 750px;
+    }
+}
+
+.light {
+    margin: 30px 0px;
+    display: flex;
+    align-items: flex-start;
+    &_image {
+        width:100%;
+    }
+    &_text {
+        margin-left: 50px;
+        font-weight: 400;
+        font-size: 48px;
+        color: #3b444b;
+        &_logo {
+            font-family: "Inder";
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1599.99px) {
+    .conteiner {
+        max-width:1024px;
+        width: 100%;
+        margin: 0 auto;
+      }
+    .main {
+        margin-top: 80px;
+        &_way {
+            margin-top: 13px;
+            &_link {
+                font-size: 16px;
+                text-decoration: none;
+                color: #3B444B;
+                font-weight: 500;
+            }
+            &_point {
+                margin: 0px 11px;
+            }
+        }
+
+        &_head {
+            margin: 25px auto;
+            font-weight: 600;
+            font-size: 50px;
+            text-align: center;
+            color: #3b444b;
+        }
+    
+        &_info {
+            display: flex;
+            align-items: flex-start;
+            &_image {
+                width: 100%;
+            }
+            &_text {
+                margin-left: 35px;
+                font-weight: 400;
+                font-size: 30px;
+                color: #3b444b;
+                &_logo {
+                    font-family: "Inder";
+                }
+            }
+        }
+    }
+    
+    .dark {
+        margin: 20px 0px;
+        &_text {
+            width: 930px;
+            font-weight: 300;
+            font-size: 30px;
+            color: #e8e8e8;
+            &_logo {
+                font-family: "Inder";
+            }
+        }
+        &_image {
+            width: 600px;
+            margin-top: 30px;
+            margin-left: 300px;
+        }
+    }
+    
+    .light {
+        margin: 30px 0px;
+        display: flex;
+        align-items: flex-start;
+        &_image {
+            width:100%;
+        }
+        &_text {
+            margin-left: 30px;
+            font-weight: 400;
+            font-size: 30px;
+            color: #3b444b;
+            &_logo {
+                font-family: "Inder";
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1023.99px) {
+    .conteiner {
+        max-width:768px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      
+    .main {
+        &_way {
+            margin-top: 13px;
+            &_link {
+                font-size: 11px;
+                text-decoration: none;
+                color: #3B444B;
+                font-weight: 500;
+            }
+            &_point {
+                margin: 0px 9px;
+            }
+        }
+
+        &_head {
+            margin: 25px auto;
+            font-weight: 600;
+            font-size: 50px;
+            text-align: center;
+            color: #3b444b;
+        }
+    
+        &_info {
+            display: flex;
+            align-items: flex-start;
+            &_image {
+                width: 100%;
+            }
+            &_text {
+                margin-left: 25px;
+                font-weight: 400;
+                font-size: 23px;
+                color: #3b444b;
+                &_logo {
+                    font-family: "Inder";
+                }
+            }
+        }
+    }
+    
+    .dark {
+        margin: 20px 0px;
+        &_text {
+            width: 700px;
+            font-weight: 300;
+            font-size: 23px;
+            color: #e8e8e8;
+            &_logo {
+                font-family: "Inder";
+            }
+        }
+        &_image {
+            width: 400px;
+            margin-top: 60px;
+            margin-left: 370px;
+        }
+    }
+    
+    .light {
+        margin: 30px 0px;
+        display: flex;
+        align-items: flex-start;
+        &_image {
+            width:100%;
+        }
+        &_text {
+            margin-left: 25px;
+            font-weight: 400;
+            font-size: 23px;
+            color: #3b444b;
+            &_logo {
+                font-family: "Inder";
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 370px) and (max-width:767.99px) {
+    .conteiner {
+        max-width:375px;
+        width: 100%;
+        margin: 0 auto;
+      }
+    .main {
+        &_way {
+            margin-top: 13px;
+            &_link {
+                font-size: 20px;
+                text-decoration: none;
+                color: #3B444B;
+                font-weight: 500;
+            }
+            &_point {
+                margin: 0px 9px;
+            }
+        }
+
+        &_head {
+            margin: 25px auto;
+            font-weight: 600;
+            font-size: 40px;
+            text-align: center;
+            color: #3b444b;
+        }
+    
+        &_info {
+            display: flex;
+            align-items: flex-start;
+            &_image {
+                width: 1254px;
+            }
+            &_text {
+                margin-left: 11px;
+                font-weight: 400;
+                font-size: 16px;
+                color: #3b444b;
+                &_logo {
+                    font-family: "Inder";
+                }
+            }
+        }
+    }
+    
+    .dark {
+        margin: 20px 0px;
+        &_text {
+            width: 370px;
+            font-weight: 300;
+            font-size: 16px;
+            color: #e8e8e8;
+            &_logo {
+                font-family: "Inder";
+            }
+        }
+        &_image {
+            width: 370px;
+            margin-top: 26px;
+            margin-left: 0px;
+        }
+    }
+    
+    .light {
+        margin: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        &_image {
+            width: 370px;
+        }
+        &_text {
+            font-weight: 400;
+            font-size: 16px;
+            color: #3b444b;
+            &_logo {
+                font-family: "Inder";
+            }
+        }
+    }
+}
+
+
+

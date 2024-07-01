@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="../public/images/mestoLogo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/styles/company.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>Company Vite App</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-fix">
+          <div class="conteiner">
+            <div class="head">
+              <div class="head_logo">
+                <img class="head_logo_img" src="../public/images/mestoLogo.svg" alt="">
+                <a class="head_logo_name" href="../index.html">mesto</a>
+              </div>
+              <nav class="head_center">
+                <ul class="head_center_list">
+                  <li class="head_center_list_item"><a class="head_center_list_item_link" href="../project/project.html">Проекты</a></li>
+                  <li class="head_center_list_item"><a class="head_center_list_item_link" href="../service/service.html">Услуги</a></li>
+                  <li class="head_center_list_item"><a class="head_center_list_item_link" href="../company/company.html">О нас</a></li>
+                </ul>
+              </nav>
+              <div class="head_end">
+                <button class="head_end_btn">Отправить заявку</button>
+                <img class="head_end_link" src="../public/images/acc.svg" alt="">
+                <img class="head_end_burger" src="../public/images/menu.svg" alt="">
+              </div>
+            </div>
+          </div>
+      </div>
+    </header>
+    <section style="background-color: #e8e8e8;">
+      <div class="conteiner">
+        <div class="main">
+            <div class="main_way">
+                <a class="main_way_link" href="../index.html">Главная</a>
+                <img class="main_way_point" src="../public/images/mestoLogo(dark).svg" alt="">
+                <a class="main_way_link" href="./company.html">О нас</a>
+            </div>
+            <h2 class="main_head">Компания</h2>
+            <div class="main_info">
+              <img class="main_info_image" src="../public/images/company-main.png" alt="">
+                <p class="main_info_text"><span class="main_info_text_logo">mesto</span> создает удобные и функциональные дизайны от небольших проектов до крупных зданий. Проектируя частные квартиры, дома и деловые зоны, мы знаем, как сформировать идеальное пространство под любые запросы в нашем уникальном стиле</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section style="background-color: #3b444b;">
+      <div class="conteiner">
+        <div class="dark">
+          <p class="dark_text">Начиная с глубокого анализа потребностей заказчика, специалисты <span class="dark_text_logo">mesto</span> погружаются в изучение пространства, его архитектурных особенностей, подбирают стилистику, материалы и цветовую гамму.</p>
+          <img class="dark_image" src="../public/images/company-2.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section style="background-color: #e8e8e8;">
+      <div class="conteiner">
+        <div class="light">
+          <img class="light_image" src="../public/images/company-3.png" alt="">
+          <p class="light_text">Работая с <span class="light_text_logo">mesto</span>, вы получаете не просто дизайнерский проект, а уникальное "место", где каждая деталь создает ощущение гармонии и уюта.</p>
+        </div>
+      </div>
+    </section>
+    <section style="background-color: #3B444B">
+      <div class="conteiner">
+        <div class="form">
+          <div class="form_text">
+            <h3 class="form_text_head">Оставить заявку</h3>
+            <p class="form_text_paragraf">Свяжитесь с нами, чтобы обсудить проект, или закажите обратный звонок</p>
+          </div>
+          <div class="form_block">
+            <form class="form_block_send" method="post" action="../send.php">
+              <input class="form_block_send_input" type="text" name="username" placeholder="имя" required><br>
+              <input class="form_block_send_input" type="number" name="number" placeholder="номер телефона" required><br>
+              <input class="form_block_send_input" type="email" name="email" placeholder="email" required><br>
+              <p class="form_block_send_text">Нажимая эту кнопку, вы соглашаетесьс политикой обработки персональных данных</p>
+              <input class="form_block_send_button" type="submit" name="send" value="Заказать звонок">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer style="background-color: #3B444B">
+      <div class="conteiner">
+        <div class="footer">
+          <div class="footer_logo">
+            <a href="../index.html"><img class="footer_logo_img" src="../public/images/mestoLogo.svg" alt=""></a>
+            <a class="footer_logo_text" href="../index.html">mesto</a>
+          </div>
+          <div class="footer_right">
+            <p class="footer_right_text">© mesto, Все права защищены, 2024</p>
+            <p class="footer_right_text">Политика конфиденциальности</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="overlay"></div>
+
+    <div class="conteiner">
+      <div class="login">
+        <div class="login_content">
+          <div class="login_content_head">
+            <h3 class="login_content_head_name">Вход</h3>
+            <img class="login_content_head_close" src="../public/images/close.svg" alt="">
+          </div>
+          <form class="login_content_form" method="post" action="../login.php">
+            <input class="login_content_form_input" type="text" name="number" placeholder="номер телефона" required><br>
+            <input class="login_content_form_input" type="password" name="password" placeholder="пароль" required><br>
+            <div class="g-recaptcha" name="g-recaptcha" data-sitekey="6Lc37AAqAAAAAGQm6Wn0vAeJD59vKuumqAFhq5ME"></div><br>
+            <input class="login_content_form_link" type="button" name="LoginToReg" value="Нет аккаунта?">
+            <input class="login_content_form_button" type="submit" name="submit" value="Войти">
+        </form>
+        </div>
+      </div>
+    </div>
+  
+      <div class="conteiner">
+        <div class="register">
+          <div class="register_content">
+            <div class="register_content_head">
+              <h3 class="register_content_head_name">Регистрация</h3>
+              <img class="register_content_head_close" src="../public/images/close.svg" alt="">
+            </div>
+            <form class="register_content_form" method="post" action="../reg.php">
+              <input class="register_content_form_input" type="text" name="username" placeholder="имя" required><br>
+              <input class="register_content_form_input" type="text" name="number" placeholder="номер телефона" required><br>
+              <input class="register_content_form_input" type="text" name="email" placeholder="email" required><br>
+              <input class="register_content_form_input" type="password" name="password" placeholder="пароль" required><br>
+              <input class="register_content_form_input" type="password" name="confirm_password" placeholder="повторите пароль" required><br>
+              <input class="register_content_form_link" type="button" name="RegToLogin" value="Есть аккаунт?">
+              <input class="register_content_form_button" type="submit" name="registration" value="Зарегистрироваться">
+          </form>
+          </div>
+        </div>
+      </div>
+
+      <script type="module" src="../javaScript/page.js"></script>
+</body>
+</html>
